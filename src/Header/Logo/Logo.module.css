@@ -1,0 +1,15 @@
+.LogoWrapper {
+    width: 50%;
+    max-height: 100%;
+    display: inline-block;
+}
+
+.LogoWrapper img {
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .LogoWrapper {
+        width: 15%;
+    }
+}

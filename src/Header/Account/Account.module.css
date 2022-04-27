@@ -1,0 +1,18 @@
+@media (max-width: 769px) {
+    .AccountWrapper {
+        display: none;
+    }
+}
+
+.AccountWrapper {
+    order: 1;
+}
+
+.AccountWrapper img {
+    width: 30px;
+}
+
+.AccountWrapper span {
+    margin: 10px 0 0 10px;
+    float: right;
+}
