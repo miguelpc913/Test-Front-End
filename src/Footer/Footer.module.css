@@ -2,61 +2,6 @@
     background-color: black;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-}
-
-.Location {
-    color: white;
-}
-
-.LocationTitle {
-    display: inline-block;
-}
-
-.LocationTitle::after {
-    width: 50%;
-    height: 4px;
-    background-color: white;
-    content: " ";
-    display: block;
-}
-
-.Location ul {
-    padding-inline-start: 0px;
-}
-
-.Location li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.Contact .ContactBox {
-    background-color: white;
-    display: block;
-    height: 50px;
-    width: 250px;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 0 10px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-}
-
-.Contact .ContactSvgWrapper {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.DevelopedBy {
-    color: white;
-}
-
-.BlackLogoWrapper {
-    width: 100px;
-}
-
-.BlackLogoWrapper img {
-    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

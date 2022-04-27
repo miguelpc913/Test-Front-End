@@ -1,0 +1,19 @@
+.DevelopedBy {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.BlackLogoWrapper {
+    width: 100px;
+}
+
+.BlackLogoWrapper img {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .DevelopedBy {
+        width: 33%;
+    }
+}
