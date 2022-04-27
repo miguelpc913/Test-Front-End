@@ -7,13 +7,13 @@ import Account from './Account/Account'
 
 function Header() {
     return (
-        <div className={style.Header}>
+        <header className={style.Header}>
             <Hamburger></Hamburger>
             <Logo></Logo>
             <CartIcon></CartIcon>
             <SearchBar></SearchBar>
             <Account></Account>
-        </div>
+        </header>
     );
 }
 
