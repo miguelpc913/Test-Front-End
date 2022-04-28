@@ -1,0 +1,35 @@
+.CarouselContainer {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+@media(min-width:769px) {
+    .CarouselContainer {
+        height: 600px;
+        width: 100%;
+        background-color: black;
+    }
+}
+
+
+.ButtonContainer {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.ButtonContainer .CarouselBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    background-color: #BDBDBD;
+}
+
+.ButtonContainer .CarouselBtn.ActiveButton {
+    background-color: #F8475F;
+}
