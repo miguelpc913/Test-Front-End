@@ -79,4 +79,8 @@
     .productCard:hover .addToCartBtn {
         opacity: 1;
     }
+
+    .productCard:hover {
+        background-color: #E6E8EA;
+    }
 }
