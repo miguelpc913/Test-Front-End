@@ -29,6 +29,7 @@
     margin: 10px;
     background-color: #BDBDBD;
     border: none;
+    cursor: pointer;
 }
 
 .ButtonContainer .CarouselBtn.ActiveButton {
