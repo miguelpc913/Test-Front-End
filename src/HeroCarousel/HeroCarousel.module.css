@@ -1,12 +1,12 @@
 .CarouselContainer {
     position: relative;
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
 
 @media(min-width:769px) {
     .CarouselContainer {
-        height: 600px;
+        height: 400px;
         width: 100%;
         background-color: black;
     }
@@ -24,10 +24,11 @@
 
 .ButtonContainer .CarouselBtn {
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 20px;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
     background-color: #BDBDBD;
+    border: none;
 }
 
 .ButtonContainer .CarouselBtn.ActiveButton {

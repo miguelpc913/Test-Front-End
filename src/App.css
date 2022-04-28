@@ -1,4 +1,33 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
+.alice-carousel__prev-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+  width: auto !important;
+  font-size: 50px;
+}
+
+.alice-carousel__next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -50px;
+  width: auto !important;
+  font-size: 50px;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #F8475F !important;
+}
+
+
+.alice-carousel__dots-item:not(.__custom) {
+  background-color: #BDBDBD;
 }

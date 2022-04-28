@@ -5,15 +5,19 @@ import CartIcon from './Cart/Cart';
 import SearchBar from './SearchBar/SearchBar';
 import Account from './Account/Account'
 
-function Header() {
+type PropTypes = {
+    cartItems: number
+}
+
+function Header(props: PropTypes) {
     return (
         <header className={style.Header}>
             <Hamburger></Hamburger>
             <Logo></Logo>
-            <CartIcon></CartIcon>
+            <CartIcon cartItems={props.cartItems}></CartIcon>
             <SearchBar></SearchBar>
             <Account></Account>
-        </header>
+        </header >
     );
 }
 

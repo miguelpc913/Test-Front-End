@@ -14,7 +14,7 @@ const imageData: image[] = [
     {
         id: 1,
         src: firstThumbnail,
-        title: "¡Hola! ¿Qué es lo que buscas? ¡Hola! ¿Qué es lo que buscas? Crear o migrar tu comercio electrónico?"
+        title: "¡Hola! ¿Qué es lo que buscas? Crear o migrar tu comercio electrónico?"
     },
     {
         id: 2,

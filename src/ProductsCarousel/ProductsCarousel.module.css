@@ -1,0 +1,6 @@
+@media (min-width: 769px) {
+    .ProductsCarouselWrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

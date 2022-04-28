@@ -3,3 +3,17 @@
         order: 2;
     }
 }
+
+.CartWrapper {
+    position: relative;
+}
+
+.cartCount {
+    margin: 2px 0px 0px 2px;
+    float: right;
+    background-color: #F8475F;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    padding: 3px;
+}

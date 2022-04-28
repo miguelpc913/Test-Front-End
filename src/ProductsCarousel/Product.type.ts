@@ -10,7 +10,7 @@ type ProductType = {
     imageUrl: string,
     listPrice?: number,
     price: number,
-    installments: [Installment]
+    installments: Installment[]
 }
 
 export default ProductType;

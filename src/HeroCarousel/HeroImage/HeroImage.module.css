@@ -7,10 +7,16 @@
 
 .imageContainer.leftContainer {
     left: -100%;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .imageContainer.rightContainer {
     right: -100%;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .image {
@@ -50,15 +56,16 @@
         height: 100%;
         width: 100%;
         position: absolute;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 500 150' preserveAspectRatio='none' style='height: 100%25%3B width: 100%25%3B' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M208.09 0.00 C152.69 67.10 262.02 75.98 200.80 150.00 L0.00 150.00 L0.00 0.00 Z' style='stroke: none%3B fill: %23000000%3B'%3E%3C/path%3E%3C/svg%3E");
-        left: 70%;
+        background-image:
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 500 150' preserveAspectRatio='none' style='height: 100%25; width: 100%25;'%3e%3cpath d='M507.09,-24.16 C399.87,96.22 491.85,83.39 476.62,163.33 L0.00,150.00 L0.00,0.00 Z' style='stroke: none; fill: %23000000'%3e%3c/path%3e%3c/svg%3e");
+        left: 40%;
     }
 
     .HeroTitleWrapper {
         height: 100%;
         position: relative;
-        background-color: black;
-        width: 50%;
+        background-color: #000000;
+        width: 40%;
     }
 
     .image {
