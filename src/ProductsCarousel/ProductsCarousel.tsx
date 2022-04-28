@@ -38,7 +38,7 @@ const ProductsCarousel = function (props: PropTypes) {
         0: {
             items: 2,
         },
-        1000: {
+        1024: {
             items: 4,
         }
     }

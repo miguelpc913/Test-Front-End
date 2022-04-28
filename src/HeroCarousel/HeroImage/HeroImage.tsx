@@ -1,6 +1,7 @@
 import { image } from '../ImagesData'
 import { slideTo } from '../HeroCarousel'
 import style from './HeroImage.module.css'
+import parse from 'html-react-parser';
 
 type propTypes = {
     image: image,
@@ -24,7 +25,7 @@ function HeroImage(props: propTypes) {
             <img src={props.image.src} className={style.image} />
             <div className={style.HeroTitleWrapper}>
                 <div className={style.HeroTitle}>
-                    <h1>{props.image.title}</h1>
+                    {parse(props.image.title)}
                 </div>
                 <div className={style.CustomShapeDivider} >
                 </div>

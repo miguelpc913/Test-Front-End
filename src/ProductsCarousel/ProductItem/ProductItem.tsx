@@ -21,7 +21,7 @@ const ProductItem = function (props: propTypes) {
         let reviews = []
         for (let index = 0; index < 5; index++) {
             const isActive = index <= product.stars
-            reviews.push(<Star active={isActive}></Star>)
+            reviews.push(<Star key={index} active={isActive}></Star>)
         }
         return reviews
     }

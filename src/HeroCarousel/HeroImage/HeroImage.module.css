@@ -33,21 +33,19 @@
 }
 
 .HeroTitle {
-    width: 100%;
     position: absolute;
-    left: 0;
     top: 50%;
-    transform: translateY(-50%);
-    border: none;
+    left: 20px;
+    transform: translate(0%, -50%);
     color: white;
-    text-align: center;
-    border-radius: 25px;
-    z-index: 1;
 }
 
 .HeroTitle h1 {
-    text-align: center;
-    margin: 0px 200px;
+    font: normal normal 900 34px Nunito;
+}
+
+.HeroTitle span {
+    font: normal normal bold 30px Nunito;
 }
 
 @media (min-width: 769px) {
@@ -59,6 +57,13 @@
         background-image:
             url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 500 150' preserveAspectRatio='none' style='height: 100%25; width: 100%25;'%3e%3cpath d='M507.09,-24.16 C399.87,96.22 491.85,83.39 476.62,163.33 L0.00,150.00 L0.00,0.00 Z' style='stroke: none; fill: %23000000'%3e%3c/path%3e%3c/svg%3e");
         left: 40%;
+    }
+
+    .HeroTitle {
+        width: 100%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
     }
 
     .HeroTitleWrapper {

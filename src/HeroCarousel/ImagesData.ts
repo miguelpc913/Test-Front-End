@@ -14,21 +14,21 @@ const imageData: image[] = [
     {
         id: 1,
         src: firstThumbnail,
-        title: "¡Hola! ¿Qué es lo que buscas? Crear o migrar tu comercio electrónico?"
+        title: "<span>¡Hola! ¿Qué es lo que buscas?</span> <h1>Crear o migrar tu comercio electrónico?</h1>"
     },
     {
         id: 2,
         src: secondThumbnail,
-        title: "¡Se un guru de ventas!"
+        title: "<h1>¡Se un guru de ventas!</h1>"
     },
     {
         id: 3,
         src: thirdThumbnail,
-        title: "¡Mejora tu contacto con tus clientes!"
+        title: "<h1>¡Mejora tu contacto con tus clientes!</h1>"
     }, {
         id: 4,
         src: fourthThumbnail,
-        title: "¡Potencia tus ventas!"
+        title: "<h1>¡Potencia tus ventas!</h1>"
     }
 ]
 
