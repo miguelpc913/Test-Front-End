@@ -1,4 +1,4 @@
-import { image } from '../ImagesData'
+import { image } from '../../Utils/HeroImagesData'
 import { slideTo } from '../HeroCarousel'
 import style from './HeroImage.module.css'
 import parse from 'html-react-parser';
@@ -15,8 +15,10 @@ function HeroImage(props: propTypes) {
     let directionClass = ''
     let slideToClass = '';
     if (!props.isActive) {
+        //Move inactive image to left or right.
         directionClass = props.isLeft ? ` ${style.leftContainer}` : ` ${style.rightContainer}`
     } else {
+        //Slide active image from left or right
         slideToClass = props.slideTo === "right" ? ` ${style.slideToRight}` : ` ${style.slideToLeft}`
     }
 

@@ -1,30 +1,28 @@
 import { FormEvent, useEffect, useState } from "react";
 import style from './ProductsCarousel.module.css'
-import ProductType from "./Product.type";
+import ProductType from "../Utils/Product.type";
 import ProductItem from "./ProductItem/ProductItem";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-
-
-const productsApi = 'https://corebiz-test.herokuapp.com/api/v1/products'
+import { fetchProducts } from "../Utils/ApiClient";
 
 type PropTypes = {
     addToCartHandler: (e: FormEvent) => void
 }
 
 const ProductsCarousel = function (props: PropTypes) {
-
     const [products, setProducts] = useState<ProductType[]>();
     useEffect(() => {
-        const fetchProducts = async () => {
-            const response = await fetch(productsApi);
-            const data = await response.json();
-            setProducts(data);
+        //Fetch products and set state
+        const getProducts = async () => {
+            const products = await fetchProducts();
+            setProducts(products);
         }
-        fetchProducts();
+        getProducts();
     }, [])
 
     const renderProducts = () => {
+        //Render products and overwrite drag event for Carousel
         const handleDragStart = (e: React.DragEvent<HTMLDivElement>) => e.preventDefault();
         if (products) {
             return products.map(product => <ProductItem
@@ -34,6 +32,8 @@ const ProductsCarousel = function (props: PropTypes) {
                 handleDragStart={handleDragStart}></ProductItem>)
         }
     }
+
+    //set items per row based on window inner width.
     const responsive = {
         0: {
             items: 2,

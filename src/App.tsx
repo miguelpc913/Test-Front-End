@@ -7,6 +7,7 @@ import Newsletter from './Newsletter/Newsletter'
 import ProductsCarousel from './ProductsCarousel/ProductsCarousel';
 
 function App() {
+  //Get local storage of cart item, if it doesn't exist set 0
   const localStoredCart = localStorage.getItem("cart");
   const stringIsParsableNumber = (value: string) => !isNaN(parseInt(value))
   const initialCartExists = localStoredCart !== null && stringIsParsableNumber(localStoredCart)
@@ -15,6 +16,7 @@ function App() {
 
   const addToCartHandler = (e: FormEvent) => {
     e.preventDefault();
+    //Update cart item based on cart if is added
     const cart = localStorage.getItem("cart");
     if (cart) {
       const newCartValue = parseInt(cart) + 1;

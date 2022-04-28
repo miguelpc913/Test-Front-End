@@ -1,18 +1,6 @@
 import React, { ChangeEvent, useState } from 'react';
+import { postNewsLetter } from '../Utils/ApiClient';
 import style from './Newsletter.module.css';
-
-async function postData(url = '', data = {}) {
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
-    });
-    return response.json(); // parses JSON response into native JavaScript objects
-}
-
-const newsletterApi = "https://corebiz-test.herokuapp.com/api/v1/newsletter"
 
 type State = {
     name: string,
@@ -35,6 +23,7 @@ function Newsletter() {
     }
 
     const isValidEmail = (mail: string) => {
+        //Use regex to check if email is valid
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
             return (true)
         }
@@ -43,11 +32,11 @@ function Newsletter() {
 
     const submitEventHandler = async (e: React.FormEvent<HTMLInputElement>) => {
         e.preventDefault();
+        //We check if email is valid and if name is not empty
         if (state.name.trim().length > 0 && isValidEmail(state.email)) {
             try {
-                const response = await postData(newsletterApi, state)
+                const response = await postNewsLetter(state)
                 setState({ name: "", email: "" })
-                console.log(response)
                 alert("Gracias!")
             } catch (e) {
                 alert(e);

@@ -1,5 +1,5 @@
 import { FormEvent, FormEventHandler } from "react";
-import ProductType from "../Product.type";
+import ProductType from "../../Utils/Product.type";
 import style from "./ProductItem.module.css"
 import Star from "./Review/Star";
 
@@ -45,7 +45,6 @@ const ProductItem = function (props: propTypes) {
                         <span>Add To Cart</span>
                     </button>
                 </form>
-
             </div>
         </div>
     )
