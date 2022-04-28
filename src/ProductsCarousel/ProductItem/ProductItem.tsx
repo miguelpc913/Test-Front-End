@@ -11,12 +11,12 @@ type propTypes = {
 
 const ProductItem = function (props: propTypes) {
     const { product } = props;
-
     const onSale = product.listPrice ? product.listPrice > product.price : false;
+    // Divide by 100 and added currency symbol to match format
     const formatMoney = (money: number) => {
         return "$ " + (money / 100)
     }
-
+    // Render reviews and set active based on stars field from products
     const renderReviewWidget = () => {
         let reviews = []
         for (let index = 0; index < 5; index++) {
